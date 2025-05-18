@@ -46,4 +46,24 @@
   @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+  }.Toastify__toast--success {
+  background-color: #f472b6; /* Pink-600 from your app */
+  color: white;
+}
+.Toastify__toast--error {
+  background-color: #dc2626; /* Red-600 for errors */
+  color: white;
+}
+
+.Toastify__progress-bar--error {
+  background-color: #f87171; /* Lighter red for progress bar */
+}
+
+.Toastify__close-button {
+  color: #ffffff; /* White close button */
+  opacity: 0.8;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}

@@ -12,7 +12,7 @@ export default function Hero() {
           <motion.h1  
           initial = {{y:-100 , opcacity: 0}}
           animate = {{y:0 , opcacity:1}}
-          transition  = {{duration:1.5}}
+          transition  = {{duration:1}}
 
           className="md:-mt-72 text-4xl md:text-5xl font-script text-white mb-2">
             Welcome to a world  <span className="font-fntprimary text-primary">where every cake tells a story</span>
@@ -30,7 +30,7 @@ Because every occasion deserves a slice of perfection.”
   initial={{ y: -100, opacity: 0 }}
   animate={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.8 }}
-  whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255, 105, 180)" }}
+  // whileHover={{ scale: 1.1, boxShadow: "0px 0px 8px rgb(255, 105, 180)" }}
   onClick={() => navigate('/menu')}
   className="bg-white text-pink-500 px-8 py-3 rounded-full font-medium hover:shadow-lg hover:shadow-pink-600 transition-colors"
 >

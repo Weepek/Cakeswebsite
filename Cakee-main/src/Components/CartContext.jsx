@@ -6,7 +6,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
   // Add item to cart
-  const addToCart = (item) => {
+const addToCart = (item) => {
     setCart((prevCart) => {
       const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
       if (existingItem) {
@@ -19,7 +19,6 @@ export const CartProvider = ({ children }) => {
       return [...prevCart, { ...item, quantity: 1 }];
     });
   };
-
   // Remove item from cart
   const removeFromCart = (id) => {
     setCart((prevCart) => prevCart.filter((item) => item.id !== id));
